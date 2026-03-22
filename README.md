@@ -25,7 +25,7 @@ After user completes their input entry, it will show the Per Person Tip Amount a
 
 The user has an option to reset everything with `Reset` button. This button will be disabled at the start, and will only be enabled if the user provides all 3 data in their respective fields.
 
-This is a screen-size friendly calculator.
+This is a responsive and screen-reader friendly calculator.
 
 ### Screenshot
 
