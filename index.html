@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/split-bill.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="" class="logo" />
+    </header>
+
+    <main>
+      <article class="user-data">
+        <form action="" class="form" id="form" novalidate>
+          <div class="form-data">
+            <label for="bill-input" class="input-label">Bill</label>
+
+            <div class="icon-and-data">
+              <img src="./assets/icon-dollar.svg" alt="" />
+              <input type="number" name="bill" id="bill-input" placeholder="0" aria-live="polite" aria-atomic="true" />
+            </div>
+          </div>
+
+          <fieldset class="form-data">
+            <legend class="input-label">Select Tip %</legend>
+
+            <div class="tip-wrapper">
+              <div class="tip-option">
+                <input type="radio" id="tip-5" name="tip-percent" value="5%" />
+                <label for="tip-5">5%</label>
+              </div>
+
+              <div class="tip-option">
+                <input type="radio" id="tip-10" name="tip-percent" value="10%" />
+                <label for="tip-10">10%</label>
+              </div>
+
+              <div class="tip-option">
+                <input type="radio" id="tip-15" name="tip-percent" value="15%" />
+                <label for="tip-15">15%</label>
+              </div>
+
+              <div class="tip-option">
+                <input type="radio" id="tip-25" name="tip-percent" value="25%" />
+                <label for="tip-25">25%</label>
+              </div>
+
+              <div class="tip-option">
+                <input type="radio" id="tip-50" name="tip-percent" value="50%" />
+                <label for="tip-50">50%</label>
+              </div>
+
+              <div class="tip-option custom-tip-option">
+                <input type="radio" id="custom" name="tip-percent" value="custom" />
+                <label for="custom">Custom</label>
+              </div>
+
+              <div class="custom-input-wrapper" id="custom-input-wrapper" hidden>
+                <input type="number" name="custom-tip">
+              </div>
+
+            </div>
+          </fieldset>
+
+          <div class="form-data form-data-heads" id="form-data-heads">
+            <label for="heads-input" class="input-label">Number of people</label>
+
+            <div class="icon-and-data icon-and-data-heads">
+              <img src="./assets/icon-person.svg" alt="" />
+              <input type="number" name="heads" id="heads-input" placeholder="0" aria-live="polite" aria-atomic="true" />
+            </div>
+
+            <p class="wrong-input-alert" id="wrong-input-alert" aria-live="assertive" aria-atomic="true"></p>
+          </div>
+        </form>
+      </article>
+
+      <article class="result">
+        <section class="result-heading" aria-labelledby="tip-amount">
+          <h2 id="tip-amount">Tip Amount <span>/ person</span></h2>
+          <p id="tip-per-person" aria-live="assertive" aria-atomic="true">0.00</p>
+        </section>
+
+        <section class="result-heading" aria-labelledby="total-amount">
+          <h2 id="total-amount">Total <span>/ person</span></h2>
+          <p id="total-per-person" aria-live="polite" aria-atomic="true">0.00</p>
+        </section>
+
+        <button type="button" id="button">Reset</button>
+      </article>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
