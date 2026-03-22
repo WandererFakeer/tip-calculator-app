@@ -52,4 +52,4 @@ This is a screen-size friendly calculator.
 
 ## Author
 
-- Frontend Mentor - [@WandererFakeer](https://www.frontendmentor.io/profile/WandererFakeer)
+- Sayani Mondal (Wanderer) - [@WandererFakeer](https://www.frontendmentor.io/profile/WandererFakeer)
