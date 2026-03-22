@@ -47,7 +47,7 @@ body {
 
 main {
   background-color: var(--white);
-  inline-size: min(100% - 2rem, 920 / 16 * 1rem);
+  inline-size: min(100%, 920 / 16 * 1rem);
   padding-block: clamp(1.5rem, 3vw, 3rem);
   padding-inline: clamp(1rem, 0.273rem + 3.636vw, 2.5rem);
   border-radius: var(--border-radius-1);
